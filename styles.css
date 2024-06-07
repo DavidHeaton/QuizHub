@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: center; /* Ensure centered text in all container instances */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#problems .problem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* This ensures that items wrap within the container */
+}
+
+#problems .problem span {
+    flex: 0 0 100px; /* Adjust this width to ensure consistency */
+    margin-bottom: 5px;
+}
+
+#problems .problem input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    min-width: 50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#score {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.feedback {
+    margin-left: 10px;
+    font-size: 14px;
+    color: red;
+    flex: 1 1 100%; /* Ensures feedback spans the entire width */
+    margin-top: 5px; /* Adds some space between input and feedback */
+}
+
+/* Styles for the menu page */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu .button {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.menu .button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #problems .problem span {
+        flex: 0 0 80px;
+    }
+
+    #score {
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /* Ensure menu buttons adjust for smaller screens */
+    .menu .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
