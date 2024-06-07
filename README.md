@@ -1,2 +1,2 @@
 # QuizHub
-Learning Project - A website that give simple quizzes on mathematics.
+Learning Project - A website that gives simple quizzes on mathematics.
